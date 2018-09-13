@@ -1,27 +1,27 @@
-# »ùÓÚfishµÄ¿ÉÍÏ×§²¥·ÅÊ±¼äÖá
-  Äş²¨¾ö²ßÏµÍ³(http://10.45.7.208/svnzqzhjt/sts_dev/Product/Transport/tdap/R4/trunk)
-> Æô¶¯ºó¿ì½İ·ÃÎÊ url Ê¾ÀıÈçÏÂ
-  Ğ§¹û£º
-  ![ÍÏ×§Ê±¼äÖá](./imgs/dragTime.png)
+# åŸºäºfishçš„å¯æ‹–æ‹½æ’­æ”¾æ—¶é—´è½´
+  å®æ³¢å†³ç­–ç³»ç»Ÿ(http://10.45.7.208/svnzqzhjt/sts_dev/Product/Transport/tdap/R4/trunk)
+> å¯åŠ¨åå¿«æ·è®¿é—® url ç¤ºä¾‹å¦‚ä¸‹
+  æ•ˆæœï¼š
+  ![æ‹–æ‹½æ—¶é—´è½´](./imgs/dragTime.png)
   
   
     http://127.0.0.1:8080/tdap-web/index.html?portalId=4#easyView/modules/decision/transport/cityPassengerAnalysis/views/cityPassengerMainView
-    //view Â·¾¶
+    //view è·¯å¾„
     public/dragTimeline/views/dragTimelineView.js
     /**
      * Created by cao.gy on 2017/5/18.
-     * »ùÓÚfish µÄÍÏ¶¯Ê±¼äÖá
+     * åŸºäºfish çš„æ‹–åŠ¨æ—¶é—´è½´
      *
-     * ¿É½ÓÊÕÈë²Î
-     * this.options.playSpeed ²¥·Å²½³¤¡¾Ê±¼äÖá±ä¶¯µÄµ¥Î»Ê±¼ä¡¿
-     * this.options.timerSpeed ¼ÆÊ±Æ÷ ²½³¤[Ë¢ĞÂÊ±¼äÖá±¾Éí]¡£
+     * å¯æ¥æ”¶å…¥å‚
+     * this.options.playSpeed æ’­æ”¾æ­¥é•¿ã€æ—¶é—´è½´å˜åŠ¨çš„å•ä½æ—¶é—´ã€‘
+     * this.options.timerSpeed è®¡æ—¶å™¨ æ­¥é•¿[åˆ·æ–°æ—¶é—´è½´æœ¬èº«]ã€‚
      *
-     * Í¨¹ı this.trigger('timeChage',param) ´¥·¢ÆäËüÊÓÍ¼µÄ»Øµ÷º¯Êı
-     * param Îª»Ø´«²ÎÊı {startTime:'',endTime:''}  ¿ªÊ¼&½áÊø Ê±¼ä
+     * é€šè¿‡ this.trigger('timeChage',param) è§¦å‘å…¶å®ƒè§†å›¾çš„å›è°ƒå‡½æ•°
+     * param ä¸ºå›ä¼ å‚æ•° {startTime:'',endTime:''}  å¼€å§‹&ç»“æŸ æ—¶é—´
      *
      */
-    //Ê¹ÓÃ²Î¿¼
-     var dragTimelineViewT = new dragTimelineView({});//ÊµÀı»¯
-     this.setView('.dragTimeContent',dragTimelineViewT);//¹ÒÔØµ½ÊÓÍ¼
-     this.listenTo(dragTimelineViewT,'timeChange',this.updateTrafficJamVue);//¼àÌıÊ±¼äÖá Ê±±ä»¯ÊÂ¼ş ´«Èë»Øµ÷
+    //ä½¿ç”¨å‚è€ƒ
+     var dragTimelineViewT = new dragTimelineView({});//å®ä¾‹åŒ–
+     this.setView('.dragTimeContent',dragTimelineViewT);//æŒ‚è½½åˆ°è§†å›¾
+     this.listenTo(dragTimelineViewT,'timeChange',this.updateTrafficJamVue);//ç›‘å¬æ—¶é—´è½´ æ—¶å˜åŒ–äº‹ä»¶ ä¼ å…¥å›è°ƒ
     

@@ -1,29 +1,29 @@
-# ¸´ÔÓµÄÊÓÆµµ¯´°Ò³Ãæ£¬ÓÃÓÚ¼à²âÏµÍ³ ÊÓÆµ²Ëµ¥ÏÂ Óë ÊÓÆµÊ÷Êı¾İ Áª¶¯
-  Äş²¨¼à²âÏµÍ³(http://10.45.7.208/svnzqzhjt/sts_dev/Product/Transport/tmsp/R4/trunk)
-> Ò³ÃæÊ¹ÓÃ·½Ê½ Ê¾ÀıÈçÏÂ
+# å¤æ‚çš„è§†é¢‘å¼¹çª—é¡µé¢ï¼Œç”¨äºç›‘æµ‹ç³»ç»Ÿ è§†é¢‘èœå•ä¸‹ ä¸ è§†é¢‘æ ‘æ•°æ® è”åŠ¨
+  å®æ³¢ç›‘æµ‹ç³»ç»Ÿ(http://10.45.7.208/svnzqzhjt/sts_dev/Product/Transport/tmsp/R4/trunk)
+> é¡µé¢ä½¿ç”¨æ–¹å¼ ç¤ºä¾‹å¦‚ä¸‹
 
-    //view Ãû³ÆHikVideoWithControllerView
+    //view åç§°HikVideoWithControllerView
     /**
      * Created by cao.gy on 2017/8/16.
-     * »ùÓÚfish µÄÍÏ¶¯Ê±¼äÖá
+     * åŸºäºfish çš„æ‹–åŠ¨æ—¶é—´è½´
      *
-     * ¿É½ÓÊÕÈë²Î
-     * obj json ¶ÔÏó
-     * obj.resourceType  singleVideo|multiVideo|recordVideo µ¥ÆÁ/¶àÆÁ/ÀúÊ· Ä£Ê½
-     * obj.videos []  ÊÓÆµÉè±¸Êı×é ±ØĞëÊÇÊı×é
+     * å¯æ¥æ”¶å…¥å‚
+     * obj json å¯¹è±¡
+     * obj.resourceType  singleVideo|multiVideo|recordVideo å•å±/å¤šå±/å†å² æ¨¡å¼
+     * obj.videos []  è§†é¢‘è®¾å¤‡æ•°ç»„ å¿…é¡»æ˜¯æ•°ç»„
      *
      */
-    //Ê¹ÓÃ²Î¿¼
+    //ä½¿ç”¨å‚è€ƒ
             fish.popupView({
                 url: "modules/video/views/HikVideoWithControllerView",
                 width: 980,
                 height: 550,
                 modal: false,
                 viewOption: {
-                    videos:[{teId:888,teName:'Éè±¸1'}],//ÊÓÆµÉè±¸ĞÅÏ¢ÁĞ±í
+                    videos:[{teId:888,teName:'è®¾å¤‡1'}],//è§†é¢‘è®¾å¤‡ä¿¡æ¯åˆ—è¡¨
                     resourceType:'singleVideo',//singleVideo|multiVideo|recordVideo
                 }
             });
-    //Èç¹ûÊÓÆµµ¯´°ÒÑ´æÔÚµÄÇé¿öÏÂ ÅĞ¶Ï·½Ê½ $('div.video-player-controller').length ÊÇ·ñ ²»Îª0
-    //ĞèÒª´¥·¢ÊÂ¼ş Í¨Öª ÊÓÆµÊÓÍ¼  portal``` Ïà¹ØÎªÈ«¾ÖÊÂ¼ş ¼àÌı ¼°¶¨Òå ÊÂ¼ş¼àÌı´´½¨ ÔÚÊÓÆµÊÓÍ¼
-    this.trigger(portal.eventBus,portal.const.VIDEO_RESOURCE_CHANGE,paramObj);//paramObj ¸ñÊ½Í¬ÉÏÃæ ³õÊ¼»¯ĞèÒª²ÎÊı
+    //å¦‚æœè§†é¢‘å¼¹çª—å·²å­˜åœ¨çš„æƒ…å†µä¸‹ åˆ¤æ–­æ–¹å¼ $('div.video-player-controller').length æ˜¯å¦ ä¸ä¸º0
+    //éœ€è¦è§¦å‘äº‹ä»¶ é€šçŸ¥ è§†é¢‘è§†å›¾  portal``` ç›¸å…³ä¸ºå…¨å±€äº‹ä»¶ ç›‘å¬ åŠå®šä¹‰ äº‹ä»¶ç›‘å¬åˆ›å»º åœ¨è§†é¢‘è§†å›¾
+    this.trigger(portal.eventBus,portal.const.VIDEO_RESOURCE_CHANGE,paramObj);//paramObj æ ¼å¼åŒä¸Šé¢ åˆå§‹åŒ–éœ€è¦å‚æ•°
